@@ -6,9 +6,10 @@ const { v4: uuidv4 } = require('uuid');
 
 const app = express();
 const server = http.createServer(app);
+
 const io = socketIo(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://react-chat-app-kw5w.onrender.com",
         methods: ["GET", "POST"]
     }
 });
